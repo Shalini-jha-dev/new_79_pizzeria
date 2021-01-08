@@ -1,51 +1,67 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Pizzeria</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-<script src="main.js"></script>
-</head>
-
-<body>
-    <div class="topnav">
-        <a class="active" href="#">Pizzeria</a>
-        <div class="topnav-right">
-         <a href="#viewblock">View Menu</a>
-         <a href="#addTopings">Add Menu</a>
+    <head>
+        <title>Get a Paragraph !!</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <center>
+        <div style="float: left;">
+            <span>1. </span>
+            <input type="text" id="para_1_input_1" placeholder="Input Text">
+            <br><br>
+            <span>2. </span>
+            <input type="text" id="para_1_input_2" placeholder="Input Text">
+            <br><br>
+            <span>3. </span>
+            <input type="text" id="para_1_input_3" placeholder="Input Text">
+            <br><br>
+            <span>4. </span>
+            <input type="text" id="para_1_input_4" placeholder="Input Text">
+            <br><br>
+            <span>5. </span>
+            <input type="text" id="para_1_input_5" placeholder="Input Text">
+            <br><br>
+            <span>6. </span>
+            <input type="text" id="para_1_input_6" placeholder="Input Text">
+            <br>
+            <button type="button" onclick="getParagraph1()" class="btn btn-warning">Get Paragraph 1</button>
         </div>
+    <div style="float: right;">
+        <span>1. </span>
+        <input type="text" id="para_2_input_1" placeholder="Input Text">
+        <br><br>
+        <span>2. </span>
+        <input type="text" id="para_2_input_2" placeholder="Input Text">
+        <br><br>
+        <span>3. </span>
+        <input type="text" id="para_2_input_3" placeholder="Input Text">
+        <br><br>
+        <span>4. </span>
+        <input type="text" id="para_2_input_4" placeholder="Input Text">
+        <br><br>
+        <span>5. </span>
+        <input type="text" id="para_2_input_5" placeholder="Input Text">
+        <br><br>
+        <span>6. </span>
+        <input type="text" id="para_2_input_6" placeholder="Input Text">
+        <br>
+        <button type="button" onclick="getParagraph2()" class="btn btn-warning">Get Paragraph 2</button>
     </div>
-
-    <div class="row" id="viewblock">
-        <div  class="img_div"> 
-            <img class="img-responsive"  src="images/pizza.png">
-        </div>
-      <!-- Add menu_div here and create button to call getmenu() -->
-      <div class="menu_div">
-          <button id="menuList" onclick="get_menu()">Show Menu </button>
-          <div id="display_menu"></div>
-      </div>
-    </div>
-    
-    <div class="newRow" id="addTopings">
-        <div class="block1">
-            <input id="add_item" placeholder="Type here to add toppings?"/></br>
-            <button id="add_toppings" onclick="add_item()" >Recommend a new Pizza</button>
-        </div>
-        
-    </div>
-     <!-- Add display_addedmenu div here! -->
-     <div class="block2">
-         <div id="display_addedmenu">
-         </div>
-     </div>
-    <div>
-        <img class="img-responsive"  src="images/topping.png">
-    </div>
-
-</body>
+</center>
+<center>
+    <h1 id="showParagraph1" class="show"></h1>
+    <h1 id="showParagraph2" class="show"></h1>
+</center>
+<style>
+.show{
+    font-size: x-large;
+    margin-left: 10px;
+}
+</style>
+ </body>
 </html>
